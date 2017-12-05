@@ -1,5 +1,5 @@
 # Site settings
-title: WorkBenchAPI
+title: API
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://github.com/vinodkumarmarupu/vinodkumarmarupu.github.io" # the base hostname & protocol for your site
 
