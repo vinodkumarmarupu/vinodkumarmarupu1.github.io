@@ -1,5 +1,5 @@
 ---
 layout: swagger
-title: WorkBenchAPI
+title: API
 data: fruits
 ---
