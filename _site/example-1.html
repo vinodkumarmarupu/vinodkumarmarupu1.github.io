@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Example 1</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:5001/example-1.html">
+  <link rel="alternate" type="application/rss+xml" title="WorkBenchAPI" href="http://localhost:5001/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">WorkBenchAPI</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/example-1.html">Example 1</a>
+          
+        
+          
+          <a class="page-link" href="/example-2.html">WorkBenchAPI</a>
+          
+        
+          
+          <a class="page-link" href="/">WorkBenchAPI</a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1>Example 1</h1>
+
+<p>In this example swagger description is directly embedded in the page. See
+<a href="https://raw.githubusercontent.com/jexhson/jekyll-swagger/gh-pages/example-1.md">source file</a></p>
+
+
+
+
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/fruits</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                List all fruits
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    An array of fruits
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"fruits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cherry"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.30</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lovely red cherries"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"france"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Peach"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.10</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"spain"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"italy"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fruits&gt;</span>
+    <span class="nt">&lt;fruit&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Tomato<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;price&gt;</span>2.30<span class="nt">&lt;/price&gt;</span>
+        <span class="nt">&lt;description&gt;</span>A lovely red tomato<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;origins&gt;</span>
+            <span class="nt">&lt;origin&gt;</span>france<span class="nt">&lt;/origin&gt;</span>
+        <span class="nt">&lt;/origins&gt;</span>
+    <span class="nt">&lt;/fruit&gt;</span>
+    <span class="nt">&lt;fruit&gt;</span>
+        <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Peach<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;price&gt;</span>5.12<span class="nt">&lt;/price&gt;</span>
+        <span class="nt">&lt;origins&gt;</span>
+            <span class="nt">&lt;origin&gt;</span>spain<span class="nt">&lt;/origin&gt;</span>
+            <span class="nt">&lt;origin&gt;</span>italy<span class="nt">&lt;/origin&gt;</span>
+        <span class="nt">&lt;/origins&gt;</span>
+    <span class="nt">&lt;/fruit&gt;</span>
+<span class="nt">&lt;/fruits&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-post">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">POST</span>
+                Add a fruit
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                name
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>fruit's name</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                price
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>per kilogram fruit's price</td>
+                            <td>
+                                
+                                Float
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                description
+                                
+                            </td>
+                            <td>body</td>
+                            <td>product's description</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                origin
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>product's origin</td>
+                            <td>
+                                
+                                Array
+                                
+                                of String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Product details
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cherry"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.30</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lovely red cherries"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"france"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fruit&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Tomato<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;price&gt;</span>2.30<span class="nt">&lt;/price&gt;</span>
+    <span class="nt">&lt;description&gt;</span>A lovely red tomato<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;origins&gt;</span>
+        <span class="nt">&lt;origin&gt;</span>france<span class="nt">&lt;/origin&gt;</span>
+    <span class="nt">&lt;/origins&gt;</span>
+<span class="nt">&lt;/fruit&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">401</span>
+                    Invalid data
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Missing key `price`."</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;error&gt;</span>
+    <span class="nt">&lt;message&gt;</span>Missing key `price`.<span class="nt">&lt;/message&gt;</span>
+<span class="nt">&lt;/error&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">403</span>
+                    Insufficient right to add a fruit
+                </h5>
+                
+                    
+                
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/fruits/{id}</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                Fetch a fruit
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Fruit details
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cherry"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.30</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lovely red cherries"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"france"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fruit&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Tomato<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;price&gt;</span>2.30<span class="nt">&lt;/price&gt;</span>
+    <span class="nt">&lt;description&gt;</span>A lovely red tomato<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;origins&gt;</span>
+        <span class="nt">&lt;origin&gt;</span>france<span class="nt">&lt;/origin&gt;</span>
+    <span class="nt">&lt;/origins&gt;</span>
+<span class="nt">&lt;/fruit&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">404</span>
+                    Invalid fruit ID
+                </h5>
+                
+                    
+                
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-put">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">PUT</span>
+                Update a fruit
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                name
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>fruit's name</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                price
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>per kilogram fruit's price</td>
+                            <td>
+                                
+                                Float
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                description
+                                
+                            </td>
+                            <td>body</td>
+                            <td>product's description</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                origin
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>product's origin</td>
+                            <td>
+                                
+                                Array
+                                
+                                of String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Product details
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cherry"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.30</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lovely red cherries"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"france"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fruit&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Tomato<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;price&gt;</span>2.30<span class="nt">&lt;/price&gt;</span>
+    <span class="nt">&lt;description&gt;</span>A lovely red tomato<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;origins&gt;</span>
+        <span class="nt">&lt;origin&gt;</span>france<span class="nt">&lt;/origin&gt;</span>
+    <span class="nt">&lt;/origins&gt;</span>
+<span class="nt">&lt;/fruit&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">401</span>
+                    Invalid data
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Price must be a float."</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;error&gt;</span>
+    <span class="nt">&lt;message&gt;</span>Price must be a float.<span class="nt">&lt;/message&gt;</span>
+<span class="nt">&lt;/error&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-patch">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">PATCH</span>
+                Partially update a fruit
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                name
+                                
+                            </td>
+                            <td>body</td>
+                            <td>fruit's name</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                price
+                                
+                            </td>
+                            <td>body</td>
+                            <td>per kilogram fruit's price</td>
+                            <td>
+                                
+                                Float
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                description
+                                
+                            </td>
+                            <td>body</td>
+                            <td>product's description</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                origin
+                                
+                            </td>
+                            <td>body</td>
+                            <td>product's origin</td>
+                            <td>
+                                
+                                Array
+                                
+                                of String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Product details
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cherry"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">6.30</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lovely red cherries"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"france"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;fruit&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;name&gt;</span>Tomato<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;price&gt;</span>2.30<span class="nt">&lt;/price&gt;</span>
+    <span class="nt">&lt;description&gt;</span>A lovely red tomato<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;origins&gt;</span>
+        <span class="nt">&lt;origin&gt;</span>france<span class="nt">&lt;/origin&gt;</span>
+    <span class="nt">&lt;/origins&gt;</span>
+<span class="nt">&lt;/fruit&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">401</span>
+                    Invalid data
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Price must be a float."</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;error&gt;</span>
+    <span class="nt">&lt;message&gt;</span>Price must be a float.<span class="nt">&lt;/message&gt;</span>
+<span class="nt">&lt;/error&gt;</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-delete">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">DELETE</span>
+                Delete a fruit
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">204</span>
+                    Product removed
+                </h5>
+                
+                    
+                
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript">
+// Helpers
+
+var slice = Array.prototype.slice;
+
+function $(expr, parent) {
+    return typeof expr === "string" ? (parent || document).querySelector(expr) : expr || null;
+}
+
+function $$(expr, parent) {
+    return slice.call((parent || document).querySelectorAll(expr));
+}
+
+$.bind = function(element, o) {
+    if (element) {
+        for (var event in o) {
+            var callback = o[event];
+
+            event.split(/\s+/).forEach(function (event) {
+                element.addEventListener(event, callback);
+            });
+        }
+    }
+};
+
+$.toggleDetails = function (element) {
+    if (element.classList.contains('open')) {
+        element.classList.remove('open');
+    }
+    else {
+        element.classList.add('open');
+    }
+}
+
+// Initialization
+
+function init() {
+    $$('.swagger-method-title').forEach(function (title) {
+        $.bind(title, {
+            'click': function (e) {
+                var details = $('.swagger-method-details', title.parentNode)
+                $.toggleDetails(details);
+                e.preventDefault();
+            }
+        });
+    });
+}
+
+
+// DOM already loaded?
+if (document.readyState !== "loading") {
+    init();
+}
+else {
+    // Wait for it
+    document.addEventListener("DOMContentLoaded", init);
+}
+</script>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+    <a href="https://github.com/vinodkumarmarupu/vinodkumarmarupu.github.io">
+      <span class="icon  icon--github">
+        <svg viewBox="0 0 16 16">
+          <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+        </svg>
+      </span>
+
+      <span class="username">vinodkumarmarupu/vinodkumarmarupu.github.io</span>
+    </a>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

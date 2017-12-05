@@ -1,0 +1,3023 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WorkBenchAPI</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:5001/example-2.html">
+  <link rel="alternate" type="application/rss+xml" title="WorkBenchAPI" href="http://localhost:5001/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">WorkBenchAPI</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/example-1.html">Example 1</a>
+          
+        
+          
+          <a class="page-link" href="/example-2.html">WorkBenchAPI</a>
+          
+        
+          
+          <a class="page-link" href="/">WorkBenchAPI</a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h1>WorkBenchAPI</h1>
+
+
+
+
+
+
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/users</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                userIds
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter userid value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                fields
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired fields as comma separated</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                offset
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired offset</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                limit
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired limit</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"insertDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/users/{emailId}</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                emailId
+                                
+                                </span>
+                                
+                            </td>
+                            <td>path</td>
+                            <td>Enter emailid  value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                fields
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired fields as comma separated</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                offset
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired offset</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                limit
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired limit</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"insertDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/devices</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                deviceKeys
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter device keys</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                userIds
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter user ids</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                location
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the location</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                network
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the network</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                monitoring
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the monitoring</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                fields
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired fields as comma separated</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                offset
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired offset</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                limit
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired limit</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                filterBy
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired filters</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deviceManufacture"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deviceModel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deviceSerialNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"adSiteName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"businessUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currentIpAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ownerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"macAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"numberOfCpus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalRam"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deviceStorageCapacity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"availableStorageCapacity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"operatingSystem"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"operatingSystemVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"deviceEncrypted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"enrollmentDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lastSeen"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isEnrolled"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isDesktop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isLaptop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isIos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isMacOs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isWindows"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"isAndroid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"applicationData"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"network"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"extrahop"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"monitoring"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"graphite"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/devices/network</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Please enter the unique JWT token prefixed with Bearer </td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                type
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Please enter the type</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                deviceName
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Please enter the unique alphanumeric device name</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"network"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"extrahop"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+     </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">403</span>
+                    Forbidden
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/devices/monitoring</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Please enter the unique JWT token prefixed with Bearer </td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                type
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Please enter the type</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                storeNumber
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Please enter the store number</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+   </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="s2">"monitoring"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+     </span><span class="p">{</span><span class="w">
+       </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"graphite"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+     </span><span class="p">}</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+       </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">403</span>
+                    Forbidden
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/ownerships</h2>
+    
+    <div class="swagger-method swagger-method-post">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">POST</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                body
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"ownerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"inserDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ownerClaimed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+             </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-put">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">PUT</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                deviceKey
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter deviceKey value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                body
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"ownerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inserDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ownerClaimed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                ownerId
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter owner id value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                limit
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired limit</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                offset
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired offset</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+         </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"ownership"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="p">{</span><span class="w">
+             </span><span class="s2">"ownerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+             </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+             </span><span class="s2">"ownerClaimed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+             </span><span class="s2">"insertDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+             </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+           </span><span class="p">}</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/deviceactions</h2>
+    
+    <div class="swagger-method swagger-method-post">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">POST</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                type
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter type value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                body
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+     </span><span class="s2">"Route"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"Properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+       </span><span class="s2">"fromUser"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="s2">"toUser"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="s2">"teamName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"device"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceManufacturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceModel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceSerialNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"adSiteName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"businessUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"currentIpAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"numberOfCPUs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"availableStorageCapacity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isEnrolled"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"totalRam"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ownerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"lastSeen"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"macAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"enrolmentDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"operatingSystem"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"operatingSystemVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isDesktop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isLaptop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isIos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isMacOs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isWindows"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isAndroid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"applicationData"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">}</span><span class="w">
+     </span><span class="p">},</span><span class="w">
+     </span><span class="s2">"inserDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"remarks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"trackId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"updateDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"workFlowId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"workFlowInitiated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+   </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-put">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">PUT</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                trackId
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter trackId value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                type
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter type value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                body
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+     </span><span class="s2">"Route"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"Properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+       </span><span class="s2">"fromUser"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="s2">"toUser"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="s2">"teamName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"device"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceManufacturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceModel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceSerialNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"adSiteName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"businessUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"currentIpAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"numberOfCPUs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"availableStorageCapacity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isEnrolled"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"totalRam"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ownerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"lastSeen"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"macAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"enrolmentDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"operatingSystem"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"operatingSystemVersion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isMobile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isDesktop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isLaptop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isIos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isMacOs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isWindows"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"isAndroid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"applicationData"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+           </span><span class="s2">"string"</span><span class="w">
+         </span><span class="p">]</span><span class="w">
+       </span><span class="p">}</span><span class="w">
+     </span><span class="p">},</span><span class="w">
+     </span><span class="s2">"inserDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"remarks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"trackId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"updateDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"workFlowId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"workFlowInitiated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+   </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/transactions/find</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                userId
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                deviceKey
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter deviceKey value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                workflowId
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter workflowId value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                trackId
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter trackId value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                limit
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired limit</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                offset
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter the desired offset</td>
+                            <td>
+                                
+                                Integer
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+   </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="s2">"transactions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+     </span><span class="p">{</span><span class="w">
+       </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"inserDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"remarks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"trackId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"updateDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"workFlowId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"workFlowInitiated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+     </span><span class="p">}</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+     </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/transactions</h2>
+    
+    <div class="swagger-method swagger-method-post">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">POST</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                body
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+      </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inserDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"remarks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updateDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"workFlowId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"workFlowInitiated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="swagger-method swagger-method-put">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">PUT</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                trackId
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter trackId value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                body
+                                
+                                </span>
+                                
+                            </td>
+                            <td>body</td>
+                            <td>Enter userId value</td>
+                            <td>
+                                
+                                String
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+      </span><span class="s2">"deviceKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inserDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"remarks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updateDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"workFlowId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"workFlowInitiated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+    </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="swagger-paths">
+    <h2 class="swagger-path">/search</h2>
+    
+    <div class="swagger-method swagger-method-get">
+        <h3 class="swagger-method-title">
+            <a href="#" class="swagger-method-link">
+                <span class="swagger-method-name">GET</span>
+                
+            </a>
+        </h3>
+        <div class="swagger-method-details">
+            
+            <div class="swagger-parameters">
+                <h4>Parameters</h4>
+                <table class="swagger-parameters-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Located in</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                Authorization
+                                
+                                </span>
+                                
+                            </td>
+                            <td>header</td>
+                            <td>Enter the Authorization token prefixed with Bearer</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                
+                                <span class="swagger-parameter-required">
+                                
+                                searchKey
+                                
+                                </span>
+                                
+                            </td>
+                            <td>query</td>
+                            <td>Enter searchKey value</td>
+                            <td>
+                                
+                                String
+                                
+                                
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="swagger-response">
+                <h4>Responses</h4>
+                
+                <h5>
+                    <span class="swagger-response-code">200</span>
+                    Successful
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+      </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"deptNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"userActive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"siteNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"managerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"jobTitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"directReportees"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"insertDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">400</span>
+                    Bad Request
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+                <h5>
+                    <span class="swagger-response-code">500</span>
+                    Server Error
+                </h5>
+                
+                    
+                        
+                        
+                            
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+           </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+                        
+                    
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript">
+// Helpers
+
+var slice = Array.prototype.slice;
+
+function $(expr, parent) {
+    return typeof expr === "string" ? (parent || document).querySelector(expr) : expr || null;
+}
+
+function $$(expr, parent) {
+    return slice.call((parent || document).querySelectorAll(expr));
+}
+
+$.bind = function(element, o) {
+    if (element) {
+        for (var event in o) {
+            var callback = o[event];
+
+            event.split(/\s+/).forEach(function (event) {
+                element.addEventListener(event, callback);
+            });
+        }
+    }
+};
+
+$.toggleDetails = function (element) {
+    if (element.classList.contains('open')) {
+        element.classList.remove('open');
+    }
+    else {
+        element.classList.add('open');
+    }
+}
+
+// Initialization
+
+function init() {
+    $$('.swagger-method-title').forEach(function (title) {
+        $.bind(title, {
+            'click': function (e) {
+                var details = $('.swagger-method-details', title.parentNode)
+                $.toggleDetails(details);
+                e.preventDefault();
+            }
+        });
+    });
+}
+
+
+// DOM already loaded?
+if (document.readyState !== "loading") {
+    init();
+}
+else {
+    // Wait for it
+    document.addEventListener("DOMContentLoaded", init);
+}
+</script>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+    <a href="https://github.com/vinodkumarmarupu/vinodkumarmarupu.github.io">
+      <span class="icon  icon--github">
+        <svg viewBox="0 0 16 16">
+          <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+        </svg>
+      </span>
+
+      <span class="username">vinodkumarmarupu/vinodkumarmarupu.github.io</span>
+    </a>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

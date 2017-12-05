@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Swagger API doc within jekyll
+title: WorkBenchAPI
 ---
 
 _jekyll-swagger_ is a [Jekyll](http://jekyllrb.com/) layout that allow you to
@@ -13,10 +13,10 @@ Checkout examples to see how it renders!
 ## Usage instruction
 
  1. Download
- [jekyll-swagger](https://github.com/jexhson/jekyll-swagger/zipball/master)
+ [jekyll-swagger](https://github.com/vinodkumarmarupu/vinodkumarmarupu.github.io)
  (you can also clone it).
  2. Copy `_layouts/swagger.html` and `_saas/_swagger.scss` into your jekyll site.
- 3. Add import `swagger` in `css/main.scss` (like [here](https://github.com/jexhson/jekyll-swagger/blob/gh-pages/css/main.scss#L51))
+ 3. Add import `swagger` in `css/main.scss` (like [here](https://github.com/vinodkumarmarupu/vinodkumarmarupu.github.io/css/main.scss#L51))
  4. You can now create pages with the swagger layout (`layout: swagger`).
 
 Swagger API doc can be either [within the page](https://raw.githubusercontent.com/jexhson/jekyll-swagger/gh-pages/example-1.md)
