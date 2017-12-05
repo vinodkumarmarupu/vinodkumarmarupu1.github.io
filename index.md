@@ -1,6 +1,6 @@
 ---
 layout: page
-title: WorkBenchAPI
+title: API
 ---
 
 _jekyll-swagger_ is a [Jekyll](http://jekyllrb.com/) layout that allow you to
